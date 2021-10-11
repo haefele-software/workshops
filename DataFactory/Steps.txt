@@ -1,0 +1,28 @@
+Create a Dev Data Factory
+ - Connect Data Factory to source control:
+    - github
+
+Create Resource Group
+Autorize AzureDataFactory
+
+Added package.json to the folder that contains the Data Factory source code
+Added publish_config.json (dont think this is nessary)
+Add arm-template-parameters-definition
+Setup validate with the npm install command
+Setup build
+Give access to AzureDataFactory
+az ad sp create-for-rbac --name "sp-datafactory-workshop" --sdk-auth --role contributor --scopes /subscriptions/{subscriptionid}/resourceGroups/rg-workshops-datafactory-dev
+Use the output of that in secret
+-- This resource has been deleted left it as a example
+{"clientId": "redacted",
+"clientSecret": "redacted",
+"subscriptionId": "redacted",
+"tenantId": "redacted",
+"activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+"resourceManagerEndpointUrl": "https://management.azure.com/",
+"activeDirectoryGraphResourceId": "https://graph.windows.net/",
+"sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+"galleryEndpointUrl": "https://gallery.azure.com/",
+"managementEndpointUrl": "https://management.core.windows.net/"}
+I added that manually and gave access to a resource group
+https://github.com/marketplace/actions/azure-login#configure-deployment-credentials

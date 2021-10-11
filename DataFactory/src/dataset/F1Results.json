@@ -1,0 +1,17 @@
+{
+	"name": "F1Results",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ergast",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}

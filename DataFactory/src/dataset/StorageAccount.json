@@ -1,0 +1,20 @@
+{
+	"name": "StorageAccount",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "result.json",
+				"folderPath": "abc",
+				"container": "abc"
+			}
+		},
+		"schema": {}
+	}
+}
